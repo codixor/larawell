@@ -15,3 +15,8 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('/utils/env', function()
+{
+	return View::make('utils.env');
+});
