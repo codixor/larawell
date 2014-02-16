@@ -2,7 +2,7 @@
 
 return array(
 
-	'local' 		=> array('sugarcrm'),
+	'local' 		=> array('sugarcrm', 'iMac-Bayram.local'),
 	'production' 	=> array('example.com')
 
 );

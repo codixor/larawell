@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'Asia/Bangkok',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -107,6 +107,9 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		'Barryvdh\Debugbar\ServiceProvider',
+		'Schickling\Backup\BackupServiceProvider',
+
 	),
 
 	/*
@@ -172,6 +175,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+
+		'Debugbar' 		  => 'Barryvdh\Debugbar\Facade',
 
 	),
 
