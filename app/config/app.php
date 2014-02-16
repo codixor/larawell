@@ -109,6 +109,9 @@ return array(
 
 		'Barryvdh\Debugbar\ServiceProvider',
 		'Schickling\Backup\BackupServiceProvider',
+		'Rtablada\PackageInstaller\PackageInstallerServiceProvider',
+		'Thujohn\Pdf\PdfServiceProvider',
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 
 	),
 
@@ -177,6 +180,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
 		'Debugbar' 		  => 'Barryvdh\Debugbar\Facade',
+		'PDF' 			  => 'Thujohn\Pdf\PdfFacade',
 
 	),
 

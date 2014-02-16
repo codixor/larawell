@@ -6,7 +6,12 @@
 	"require": {
 		"laravel/framework": "4.1.*",
 		"barryvdh/laravel-debugbar": "dev-master",
-		"schickling/backup": "dev-master"
+		"schickling/backup": "dev-master",
+		"venturecraft/revisionable": "1.*",
+		"rtablada/package-installer": "dev-master",
+		"thujohn/pdf": "dev-master",
+		"onigoetz/profiler": "dev-master",
+		"barryvdh/laravel-ide-helper": "1.*"
 	},
 	"autoload": {
 		"classmap": [
@@ -21,6 +26,7 @@
 	"scripts": {
 		"post-install-cmd": [
 			"php artisan clear-compiled",
+			"php artisan ide-helper:generate",
 			"php artisan optimize"
 		],
 		"post-update-cmd": [
