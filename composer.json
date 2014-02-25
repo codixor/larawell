@@ -16,6 +16,7 @@
 		"thujohn/twitter": "dev-master",
 		"bitgandtter/google-api": "dev-master",
 		"thujohn/analytics": "dev-master",
+		"thujohn/share": "dev-master",
 		"RobBrazier/Piwik": "dev-master",
 		"rahmatawaludin/laravel-notes": "dev-master",
 		"dimsav/laravel-translatable": "2.*",
