@@ -108,10 +108,19 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		'Barryvdh\Debugbar\ServiceProvider',
-		'Schickling\Backup\BackupServiceProvider',
-		'Rtablada\PackageInstaller\PackageInstallerServiceProvider',
-		'Thujohn\Pdf\PdfServiceProvider',
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+		'Barryvdh\Elfinder\ElfinderServiceProvider',
+		'Barryvdh\HttpCache\ServiceProvider',
+		'Barryvdh\TwigBridge\ServiceProvider',
+		
+		'Schickling\Backup\BackupServiceProvider',
+		'Thujohn\Pdf\PdfServiceProvider',
+		'Rahmatawaludin\LaravelNotes\LaravelNotesServiceProvider',
+		'RobBrazier\Piwik\PiwikServiceProvider',
+		'Thujohn\Twitter\TwitterServiceProvider',
+		'Greggilbert\Recaptcha\RecaptchaServiceProvider'
+
+
 
 	),
 
@@ -181,6 +190,8 @@ return array(
 
 		'Debugbar' 		  => 'Barryvdh\Debugbar\Facade',
 		'PDF' 			  => 'Thujohn\Pdf\PdfFacade',
+		'Piwik' 		  => 'RobBrazier\Piwik\Facades\Piwik',
+		'Twitter' 		  => 'Thujohn\Twitter\TwitterFacade',
 
 	),
 

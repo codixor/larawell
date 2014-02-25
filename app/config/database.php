@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'larawell',
 			'username'  => 'root',
-			'password'  => '123',
+			'password'  => 'FdjnYtcrf;e901',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

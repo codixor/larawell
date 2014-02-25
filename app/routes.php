@@ -1,22 +1,35 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
 Route::get('/', function()
 {
-	return View::make('hello');
+	//$tweets = Twitter::getUserTimeline(array('screen_name' => 'thujohn', 'count' => 20, 'format' => 'json'));
+	if(Cache::has('hello')){
+		$hello = Cache::get('hello');
+	}else{
+		$hello = View::make('hello', compact($tweets))->render();
+		Cache::put('hello', $hello, 60);
+	}
+	echo $hello;
+	//echo Form::captcha();
 });
 
 Route::get('/utils/env', function()
 {
-	return View::make('utils.env');
+	echo View::make('utils.env');
 });
+
+Route::get('/utils/apc', function()
+{
+	echo View::make('utils.apc');
+});
+
+Route::get('/utils/memcache', function()
+{
+	echo View::make('utils.memcache');
+});
+
+
+Route::get('elfinder', 'Barryvdh\Elfinder\ElfinderController@showIndex');
+Route::any('elfinder/connector', 'Barryvdh\Elfinder\ElfinderController@showConnector');
+Route::get('elfinder/tinymce', 'Barryvdh\Elfinder\ElfinderController@showTinyMCE4');
+

@@ -17,6 +17,10 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
+		// @TODO create different layout
+		// @FIXME missing controller for router
+		// @OPTIMIZE better looping for this model
+
 		return View::make('hello');
 	}
 

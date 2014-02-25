@@ -6,12 +6,20 @@
 	"require": {
 		"laravel/framework": "4.1.*",
 		"barryvdh/laravel-debugbar": "dev-master",
+		"barryvdh/laravel-ide-helper": "1.*",
+		"barryvdh/laravel-elfinder": "dev-master",
+		"barryvdh/laravel-httpcache": "*",
+		"barryvdh/laravel-twigbridge": "dev-master",
 		"schickling/backup": "dev-master",
 		"venturecraft/revisionable": "1.*",
-		"rtablada/package-installer": "dev-master",
 		"thujohn/pdf": "dev-master",
-		"onigoetz/profiler": "dev-master",
-		"barryvdh/laravel-ide-helper": "1.*"
+		"thujohn/twitter": "dev-master",
+		"bitgandtter/google-api": "dev-master",
+		"thujohn/analytics": "dev-master",
+		"RobBrazier/Piwik": "dev-master",
+		"rahmatawaludin/laravel-notes": "dev-master",
+		"dimsav/laravel-translatable": "2.*",
+		"greggilbert/recaptcha": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -31,8 +39,10 @@
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
+			"php artisan ide-helper:generate",
 			"php artisan optimize",
-			"php artisan debugbar:publish"
+			"php artisan debugbar:publish",
+			"php artisan asset:publish barryvdh/laravel-elfinder"
 		],
 		"post-create-project-cmd": [
 			"php artisan key:generate"
